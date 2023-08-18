@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def multiple_returns(sentence):
     if not sentence:
         return (0, None)
