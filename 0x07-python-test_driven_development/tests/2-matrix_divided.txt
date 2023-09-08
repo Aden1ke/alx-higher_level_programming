@@ -1,0 +1,65 @@
+# Positive Test Cases
+
+# Import the add_integer function from your module
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+# Basic Division
+matrix1 = [[2, 4, 6], [8, 10, 12]]
+divisor1 = 2
+# Expected Result:
+# [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+# Mixed Types
+matrix3 = [[1, 2.5], [3.75, 4]]
+divisor3 = 0.5
+# Expected Result:
+# [[2.0, 5.0], [7.5, 8.0]]
+
+# Negative Test Cases
+
+# Division by Zero
+matrix4 = [[2, 4], [6, 8]]
+divisor4 = 0
+# Expected Result: Raises ZeroDivisionError
+
+# Incorrect Matrix Format (Rows of Different Lengths)
+matrix5 = [[1, 2, 3], [4, 5]]
+divisor5 = 2
+# Expected Result: Raises TypeError
+
+# Incorrect Matrix Format (Not a List of Lists)
+matrix6 = "not_a_matrix"
+divisor6 = 2
+# Expected Result: Raises TypeError
+
+# Incorrect Divisor Type (String)
+matrix7 = [[1, 2], [3, 4]]
+divisor7 = "invalid"
+# Expected Result: Raises TypeError
+
+# Incorrect Matrix Format (Not a List of Lists)
+matrix8 = [[1, 2], 45]
+divisor8 = 6
+# Expected Result: Raises TypeError
+
+# Incorrect Matrix Format (Not a List of Lists)
+matrix9 = [[1, 2], [3, 4],  "Hello"]
+divisor9 = 2
+# Expected Result: Raises TypeError
+
+# Incorrect Matrix Format (Not a List of Lists)
+matrix7 = [["sarah", "hey"], [1, 2], [3, 4]]
+divisor7 = "invalid"
+# Expected Result: Raises TypeError
+
+# Large Matrix
+matrix9 = [[1] * 1000] * 1000
+divisor9 = 2
+# Test for performance and correctness
+
+# Mixed Types (Including Negative Numbers)
+matrix10 = [[-1, 2.5], [3.75, -4]]
+divisor10 = -0.5
+# Expected Result:
+# [[2.0, -5.0], [-7.5, 8.0]]
+
