@@ -1,0 +1,32 @@
+# Testing add_integer function
+
+# Import the add_integer function from your module
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Now test it:
+
+# Case 1: Both a and b are integers
+>>> add_integer(3, 5)
+8
+
+# Case 2: Both a and b are floats, should be converted to integers
+>>> add_integer(2.5, 3.7)
+5
+
+# Case 3: One of them is a float, should be converted to integers
+>>> add_integer(4.3, 7)
+11
+
+# Case 4: Default value of b is used
+>>> add_integer(10)
+108
+
+# Case 5: When a is a string, it should raise a TypeError
+>>> add_integer("school", 3)
+Traceback (most recent call last):
+TypeError: a must be an integer or b must be an integer
+
+# Case 6: When b is a list, it should raise a TypeError
+>>> add_integer(4, [2])
+Traceback (most recent call last):
+TypeError: a must be an integer or b must be an integer
