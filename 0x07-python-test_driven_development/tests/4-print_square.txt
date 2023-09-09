@@ -1,0 +1,33 @@
+# Testing print_square function
+
+# Import the add_integer function from your module
+>>> print_square = __import__('4-print_square.txt').print_square
+
+Now test it:
+
+# Case 1: size is 4
+>>> print_square(4)
+####
+####
+####
+####
+
+# Case 2: size is 0
+>>> print_square(0)
+
+
+# Case 3: size is 1
+>>> print_square(1)
+#
+
+# Case 4: when size is a string
+>>> print_square("sarah")
+size must be an integer
+
+# Case 5: when size is a float
+>>> print_square(3.6)
+size must be an integer
+
+# Case 6: when size is less than 0
+>>> print_square(-2)
+size must be >= 0
