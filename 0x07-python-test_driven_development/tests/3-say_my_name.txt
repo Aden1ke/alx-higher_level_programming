@@ -1,0 +1,27 @@
+# Testing add_integer function
+
+# Import the add_integer function from your module
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now test it:
+
+# Case 1: Both first_name and last_name are string
+>>> say_my_name("sarah", "ogunlalu")
+My name is sarah ogunlalu
+
+# Case 2: last_name is empty
+>>> say_my_name("s")
+My name is s
+
+# Case 3: first_name contains num 
+>>> say_my_name(2, sam)
+first_name must be a string
+
+# Case 4: last_name contains floats
+>>> say_my_name("sarah", 2.5)
+last_name must be a string
+
+# Case 5: last_name contains floats
+>>> say_my_name(4, 2.5)
+first_name must be a string
+last_name must be a string
