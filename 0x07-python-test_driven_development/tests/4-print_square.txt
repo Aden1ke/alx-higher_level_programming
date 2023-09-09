@@ -31,3 +31,13 @@ size must be an integer
 # Case 6: when size is less than 0
 >>> print_square(-2)
 size must be >= 0
+
+# Case 7: size is 7
+>>> print_square(7)
+#######
+#######
+#######
+#######
+#######
+#######
+#######

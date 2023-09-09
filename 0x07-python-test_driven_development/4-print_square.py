@@ -2,7 +2,6 @@
 """ This function prints name of a person"""
 
 
-
 def print_square(size):
     """
     Print the function that prints a square.
