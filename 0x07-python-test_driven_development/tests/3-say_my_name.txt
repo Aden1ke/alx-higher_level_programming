@@ -22,6 +22,10 @@ first_name must be a string
 last_name must be a string
 
 # Case 5: last_name contains floats
+>>> say_my_name("")
+first_name must be a string
+
+# Case 5: last_name contains floats
 >>> say_my_name(4, 2.5)
 first_name must be a string
 last_name must be a string
