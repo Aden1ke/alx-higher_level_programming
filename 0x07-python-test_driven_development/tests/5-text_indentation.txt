@@ -1,0 +1,28 @@
+# Testing text_indentation function
+
+# Import the text_indentation function from your module
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now test it:
+
+# Case 1: text is a string
+>>> text_indentation(""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Quonam modo?
+
+Utrum igitur tibi litteram videor an totas paginas commovere?
+
+# Case 2: text is not a string
+>>> text_indentation(5)
+text must be a string
+
+
+# Case 3: text contains nothing
+>>> say_my_name("")
+
+
+# Case 5: text contains floats
+>>> say_my_name(2.5)
+text must be a string
