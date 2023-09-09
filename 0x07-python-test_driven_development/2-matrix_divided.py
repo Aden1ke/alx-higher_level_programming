@@ -27,9 +27,9 @@ def matrix_divided(matrix, div):
         if not isinstance(row, list):
             raise TypeError("matrix must be a matrix (list of lists) " +
                             "of integers/floats")
-            if len(row) != row_length:
-                raise TypeError("Each row of the matrix " +
-                                "must have the same size")
+        if len(row) != row_length:
+            raise TypeError("Each row of the matrix " +
+                            "must have the same size")
     new_matrix = []
     for row in matrix:
         new_row = []
