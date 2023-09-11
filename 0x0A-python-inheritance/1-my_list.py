@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-class MyList(list):
-    """MyList class inherits from list and provides a method to print."""
+"""This module inherits from the list class created"""
 
+
+class MyList(list):
+    """A class that inherits from list"""
     def print_sorted(self):
-        """Print the elements of the list in ascending sorted order."""
+        """prints the sorted list"""
         print(sorted(self))
