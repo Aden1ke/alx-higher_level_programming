@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class MyList(list):
     """MyList class inherits from list and provides a method to print."""
 
