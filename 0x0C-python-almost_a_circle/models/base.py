@@ -2,9 +2,10 @@
 class Base:
     """
     This class will be the “base” of all other classes in this project
-    __nb_objects is used to keep track of the num of instances created from this class
+    __nb_objects is used to keep track of the num of instances
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Initialize a new Base.
         Args:
