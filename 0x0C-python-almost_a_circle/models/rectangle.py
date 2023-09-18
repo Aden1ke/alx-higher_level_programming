@@ -66,8 +66,20 @@ class Rectangle(Base):
 
     def display(self):
         """ print the rectangle with character #"""
-        for _ in range(self.__height):
-            print("#" * self.__width)
+        for _ in range(self.y):
+            print()
+        for _ in range(self.height):
+            print(" " * self.x + "#" * self.width)
+
+    def update(self, *args, **kwargs):
+        """Updates the arguments in the class"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        if args:
+            for i, arg in enumerate(args):
+                setattr(self, attributes[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def validate(self, attr_name, value):
         if not isinstance(value, int):
@@ -77,3 +89,8 @@ class Rectangle(Base):
                 raise ValueError(f"{attr_name} must be >= 0")
         elif value <= 0:
             raise ValueError(f"{attr_name} must be > 0")
+
+
+    def __str__(self):
+        """update string printof the Rectangle."""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
