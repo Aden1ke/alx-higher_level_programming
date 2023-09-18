@@ -136,3 +136,5 @@ class RectangleTests(unittest.TestCase):
         self.assertEqual(self.rect.y, 9)
     def tearDown(self):
         del self.rect
+if __name__ == "__main__":
+        unittest.main()
