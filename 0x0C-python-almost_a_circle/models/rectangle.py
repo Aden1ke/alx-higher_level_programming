@@ -12,7 +12,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    # setters and getters for different attributed
+    # setters and getters for different attributes
     @property
     def width(self):
         """ Returning private attribute """
@@ -57,7 +57,7 @@ class Rectangle(Base):
         self.validate("y", value)
         self.__y = value
 
-    # end of setters and getters
+    # end
 
     # area of the rectangle
     def area(self):
@@ -89,6 +89,16 @@ class Rectangle(Base):
                 raise ValueError(f"{attr_name} must be >= 0")
         elif value <= 0:
             raise ValueError(f"{attr_name} must be > 0")
+
+    def to_dictionary(self):
+        """Return a dictionary representation of the Rectangle."""
+        return {
+                'id': self.id,
+                'width': self.width,
+                'height': self.height,
+                'x': self.x,
+                'y': self.y
+                }
 
     def __str__(self):
         """update string printof the Rectangle."""
