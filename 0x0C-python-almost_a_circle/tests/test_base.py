@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """ unittest for the base class and id"""
+import io
+import sys
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
 
 
 class TestBase(unittest.TestCase):
