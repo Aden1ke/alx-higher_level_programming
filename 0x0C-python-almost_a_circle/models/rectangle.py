@@ -90,7 +90,10 @@ class Rectangle(Base):
         elif value <= 0:
             raise ValueError(f"{attr_name} must be > 0")
 
-
     def __str__(self):
         """update string printof the Rectangle."""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return (
+                f"[Rectangle] ({self.id}) "
+                f"{self.x}/{self.y} - "
+                f"{self.width}/{self.height}"
+                )
