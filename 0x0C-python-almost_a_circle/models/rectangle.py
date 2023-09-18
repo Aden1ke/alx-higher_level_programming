@@ -92,6 +92,7 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def validate(self, attr_name, value):
+        """ module for checking if values are ints)"""
         if not isinstance(value, int):
             raise TypeError(f"{attr_name} must be an integer")
         if attr_name == 'x' or attr_name == 'y':
