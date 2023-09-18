@@ -26,5 +26,5 @@ class TestBase(unittest.TestCase):
         obj2 = Base()
         self.assertEqual(obj1.id, obj2.id - 1)
 
-    if __name__ == "__main__":
-        unittest.main()
+if __name__ == "__main__":
+    unittest.main()
