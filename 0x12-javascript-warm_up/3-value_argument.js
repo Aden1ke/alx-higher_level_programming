@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-const argumentCount = process.argv.length;
-if (argumentCount == 2) {
+if (process.argv[2]) {
 	console.log('No argument');
 }
 else {
